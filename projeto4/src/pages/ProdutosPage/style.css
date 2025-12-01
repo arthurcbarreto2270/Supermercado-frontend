@@ -1,0 +1,70 @@
+/* style.css */
+
+.produtos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    /* Ajuste de cor geral para garantir visibilidade */
+    color: #f0f0f0; 
+}
+
+.produtos-container h2 {
+    font-size: 2.5em;
+    /* Cor do título para Branco */
+    color: #ffffff; 
+    margin-bottom: 30px;
+    border-bottom: 3px solid #555; /* Linha mais sutil */
+    padding-bottom: 10px;
+}
+
+/* Container da Grade (Grid) */
+.produtos-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se faltar espaço */
+    justify-content: center; /* Centraliza os itens na tela */
+    gap: 30px; /* Espaço entre os produtos */
+}
+
+/* Estilo do Cartão de cada Produto */
+.produto-item {
+    background-color: #333; /* Fundo cinza escuro para o cartão destacar do fundo preto */
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px; /* Largura fixa para cada cartão */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.produto-item:hover {
+    transform: translateY(-5px); /* Efeito ao passar o mouse */
+    border-color: #666;
+}
+
+.produto-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.produto-item p {
+    font-weight: bold;
+    /* Cor do nome do produto (Cinza claro/Branco) */
+    color: #e0e0e0; 
+    margin: 5px 0;
+}
+
+/* Classe específica para o preço para destaque */
+.produto-item .preco {
+    /* Cor do preço: Amarelo/Dourado destaca muito bem no escuro */
+    color: #ffcc00; 
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-top: 10px;
+}

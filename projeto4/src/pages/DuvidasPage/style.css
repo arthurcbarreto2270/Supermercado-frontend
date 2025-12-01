@@ -1,0 +1,58 @@
+body {
+    background-color: #222222; 
+    color: #ffffff; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contêiner principal das dúvidas, centralizado e com padding */
+.duvidas-container {
+    max-width: 800px;
+    width: 90%;
+    margin: 50px auto; /* Centraliza na tela */
+    padding: 20px;
+}
+
+/* Estilo para as Perguntas (h2) */
+.duvidas-container h2 {
+    /* Cor de fundo escura para o bloco da pergunta, para criar o contraste da imagem */
+    background-color: #333333; 
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para as Respostas (p) */
+.duvidas-container p {
+    color: #cccccc; /* Cor cinza claro para o texto da resposta, melhor legibilidade */
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 0 15px; /* Adiciona um pequeno padding lateral para não colar nas bordas */
+}
+
+/* Destaque para palavras importantes dentro dos parágrafos, como 'IMPORTANTE' */
+.duvidas-container p strong, 
+.duvidas-container p .importante {
+    color: #ff6600; /* Laranja para destaque (opcional, se você adicionar a tag <strong> ou classe 'importante' no JSX) */
+    font-weight: bold;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+    .duvidas-container h2 {
+        font-size: 20px;
+    }
+
+    .duvidas-container p {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+}

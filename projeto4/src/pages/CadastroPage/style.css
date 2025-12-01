@@ -1,0 +1,208 @@
+body {
+
+    background-color: #222222; /* Fundo muito escuro, como na imagem */
+
+    color: #ffffff; /* Cor padrão do texto (branco) */
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+
+    min-height: 100vh;
+
+}
+
+
+
+/* Contêiner principal do formulário (dentro do div 'cadastro-continer') */
+
+.cadastro-continer {
+
+    max-width: 500px;
+
+    width: 90%;
+
+    margin: 100px auto 50px; /* Margem superior para centralizar o bloco verticalmente */
+
+    padding: 20px;
+
+    background-color: #2e2e2e; /* Fundo ligeiramente mais claro para a área do formulário */
+
+}
+
+
+
+/* Título principal */
+
+.cadastro-continer h1 {
+
+    text-align: center;
+
+    color: #ffffff;
+
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+    font-size: 32px;
+
+}
+
+
+
+/* --- Estilos do Formulário e Campos de Input --- */
+
+
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+
+.form-group {
+
+    /* Não aparece explicitamente na imagem, mas é útil para organizar label e input */
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+
+    color: #cccccc;
+
+}
+
+
+
+/* Estilo para todos os campos de input (Nome, Email, CPF, Senha) */
+
+.form-group input {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #444444; /* Borda escura e discreta */
+
+    background-color: #3a3a3a; /* Fundo do input mais escuro */
+
+    color: #ffffff; /* Texto digitado em branco */
+
+    border-radius: 2px; /* Bordas suaves */
+
+    box-sizing: border-box;
+
+    font-size: 16px;
+
+}
+
+
+
+/* Estilo para o placeholder (texto de exemplo) */
+
+.form-group input::placeholder {
+
+    color: #aaaaaa; /* Texto cinza claro para os exemplos */
+
+}
+
+
+
+/* Remove a borda de foco padrão */
+
+.form-group input:focus {
+
+    outline: none;
+
+    border-color: #007bff; /* Opcional: Adiciona um destaque azul ao focar */
+
+}
+
+
+
+/* --- Estilos de Erro e Botão --- */
+
+
+
+/* Mensagens de Erro */
+
+.error {
+
+    color: #ff4d4d; /* Vermelho para destaque de erro */
+
+    font-size: 14px;
+
+    margin-top: 5px;
+
+    margin-bottom: 10px;
+
+    display: block; /* Garante que o span ocupe a linha toda */
+
+}
+
+
+
+/* Botão de Submissão */
+
+button[type='submit'] {
+
+    background-color: #007bff; /* Azul primário */
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    margin-top: 20px;
+
+    transition: background-color 0.3s;
+
+}
+
+
+
+button[type='submit']:hover:not(:disabled) {
+
+    background-color: #0056b3;
+
+}
+
+
+
+button[type='submit']:disabled {
+
+    background-color: #6c757d; /* Cinza para quando estiver enviando */
+
+    cursor: not-allowed;
+
+}

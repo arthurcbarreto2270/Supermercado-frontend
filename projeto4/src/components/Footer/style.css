@@ -1,0 +1,19 @@
+.footer {
+    background-color: #333; /* Cor de fundo escura */
+    color: #fff; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0; /* Preenchimento superior e inferior */
+    position: fixed; /* Fixa o rodapé na parte inferior da tela */
+    bottom: 0;
+    left: 0;   /* Adicionado: Garante que ele começa na esquerda */
+    right: 0;  /* Adicionado: Garante que ele termina na direita */
+    width: 100%; /* Ocupa toda a largura */
+    font-size: 0.9em; /* Tamanho de fonte um pouco menor */
+    border-top: 2px solid #ff6600; /* Linha laranja para destacar */
+}
+
+/* Estilos para o parágrafo dentro do footer */
+.footer p {
+    margin: 0; /* Remove margens padrão do parágrafo */
+    line-height: 1.5; /* Garante um espaçamento de linha adequado para o texto */
+}

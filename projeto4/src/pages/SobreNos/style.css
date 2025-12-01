@@ -1,0 +1,68 @@
+/*
+ * ESTILOS PARA PÁGINA 'SOBRE NÓS'
+ * Adaptados para fundo escuro
+ */
+
+/* Container principal para o conteúdo da página */
+.sobrenos-container {
+    max-width: 900px; /* Limita a largura do conteúdo para melhor legibilidade */
+    margin: 0 auto; /* Centraliza o container na tela */
+    padding: 40px 20px;
+    color: #f0f0f0; /* Cor do texto padrão (cinza claro) */
+    text-align: center; /* Centraliza o título principal */
+}
+
+/* Título principal */
+.sobrenos-container h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff; /* Cor do título em branco puro */
+    margin-bottom: 5px;
+}
+
+/* Subtítulo (Quem somos) */
+.sobrenos-container h2 {
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #00ff7f; /* Cor de destaque (usando a cor vibrante dos botões) */
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+/* Títulos das seções (Sobre o Supermercado, Histórico, etc.) */
+.sobrenos-container h3 {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: left; /* Alinha o título da seção à esquerda */
+    padding-bottom: 5px;
+    border-bottom: 2px solid #333; /* Linha sutil de separação */
+}
+
+/* Estilo para os parágrafos de texto */
+.sobrenos-container p {
+    font-size: 1.1em;
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas para melhor leitura */
+    color: #cccccc; /* Cinza um pouco mais escuro para o corpo do texto */
+    margin-bottom: 20px;
+    text-align: justify; /* Justifica o texto para um visual mais formal */
+    padding: 0 10px; /* Adiciona um pequeno padding lateral */
+}
+
+/* Remove a quebra de linha <br> do HTML e usa margin para espaçamento */
+.sobrenos-container br {
+    display: none;
+}
+
+/* Estilo específico para o link, se houver, no parágrafo do Cencosud */
+.sobrenos-container p a {
+    color: #00ff7f; /* Cor do link em destaque */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sobrenos-container p a:hover {
+    text-decoration: underline;
+}

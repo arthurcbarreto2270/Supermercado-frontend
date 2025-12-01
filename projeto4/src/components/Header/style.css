@@ -1,0 +1,61 @@
+.header {
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 10px 50px; /* Compacto (10px) */
+    border-bottom: 2px solid #ddd;
+    
+    /* MODIFICAÇÕES ESSENCIAIS PARA FIXAR NO TOPO */
+    position: fixed; 
+    top: 0;          
+    left: 0;         
+    right: 0;        
+    z-index: 100;    /* Garante que fique acima do conteúdo */
+    /* Fim das modificações */
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Estilos para a imagem/logo do carrinho dentro do header */
+.header .container img {
+    height: 50px;
+    width: auto;
+    /* *** AUMENTO DO ESPAÇAMENTO: de 15px para 25px *** */
+    margin-right: 10px; 
+    margin-left: 15px;
+    
+    /* ************************************************** */
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s ease-in-out; 
+}
+
+/* Opcional: Efeito ao passar o mouse para a imagem */
+.header .container img:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a imagem ao passar o mouse */
+}
+
+.header nav {
+    display: flex;
+    gap: 25px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+    color: #ff6600;
+}

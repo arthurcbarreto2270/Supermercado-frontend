@@ -1,0 +1,30 @@
+/* Estilos para o contêiner da HomePage (assumindo que o componente é envolvido por uma div com esta classe) */
+.home-page-content {
+    /* Estas propriedades são para centralizar o conteúdo da HOMEPAGE na área visível */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;     /* Centraliza horizontalmente */
+    
+    /* Calcula a altura total da viewport menos a altura do header e footer */
+    /* Você pode precisar ajustar o 100vh, 70px e 50px de acordo com as alturas reais */
+    min-height: calc(100vh - 70px - 50px); 
+    
+    padding-top: 70px; /* Compensa a altura do header fixo (ajuste se necessário) */
+    padding-bottom: 50px; /* Compensa a altura do footer fixo (ajuste se necessário) */
+    
+    /* Configuração de Largura e Margem para o contêiner principal, se aplicável */
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza o bloco de conteúdo na página */
+}
+
+/* Estilos para o parágrafo de boas-vindas */
+.home-page-content p {
+    text-align: center; /* Centraliza o texto dentro do parágrafo */
+    line-height: 1.6;   /* Melhora a leitura */
+    color: #ccc;        /* Cor do texto para contraste com o fundo escuro */
+    font-size: 1.1em;   /* Tamanho de fonte um pouco maior */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05); /* Um fundo levemente visível para destaque */
+    border-radius: 10px; /* Cantos arredondados */
+}
